@@ -254,10 +254,17 @@
                         self.setDigit(self.digits[n-6], parseInt(String(myVal).charAt(0), 10));
                     }
                     
-                    /*self.setDigit(self.digits[n-5], parseInt(String(numHours).charAt(1), 10));
-                    self.setDigit(self.digits[n-6], parseInt(String(numHours).charAt(0), 10));*/
-                    self.setDigit(self.digits[n-7], parseInt(String(numDays).charAt(1), 10));
-                    self.setDigit(self.digits[n-8], parseInt(String(numDays).charAt(0), 10));
+                    myVal = numDays % 365;
+                    if (myVal > 9) {
+                        self.setDigit(self.digits[n-7], parseInt(String(myVal).charAt(1), 10));
+                    } else {
+                        self.setDigit(self.digits[n-7], parseInt(String(myVal).charAt(0), 10));
+                    }
+                    if (myVal < 10) {
+                        self.setDigit(self.digits[n-8], 0);
+                    } else {
+                        self.setDigit(self.digits[n-8], parseInt(String(myVal).charAt(0), 10));
+                    }
                 }
             },
             initCSS: function(isNewDigit) {
