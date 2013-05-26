@@ -1,15 +1,18 @@
-#kokomo {
+body {
   background: #1d262d url('../img/background.jpg') fixed no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
 
+#kokomo {
+  position: relative;
+}
+
 #kokomo .logo {
   position: relative;
   display: block;
   margin: auto;
-  top: 70px;
 }
 
 #timer-tiles {
@@ -21,10 +24,12 @@
 #countdown {
   position: relative;
   overflow: hidden;
-  top: 120px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 65px auto;
   width: 384px;
+}
+
+#timer {
+  overflow: hidden;
 }
 
 #timer .digit {

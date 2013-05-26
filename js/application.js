@@ -19,9 +19,11 @@ $( document ).ready( function() {
 } );
 
 $( window ).load( function() {
-  $( '#kokomo' ).css( 'height', ( window.innerHeight - 16 ) + 'px' );
+  offset = Math.floor( ( window.innerHeight - $( '#kokomo' ).height() ) / 2 );
+  $( '#kokomo' ).css( 'top', offset + 'px' );
 } );
 
 $( window ).resize( function() {
-  $( '#kokomo' ).css( 'height', ( window.innerHeight - 16 ) + 'px' );
+  offset = Math.floor( ( window.innerHeight - $( '#kokomo' ).height() ) / 2 );
+  $( '#kokomo' ).css( 'top', offset + 'px' );
 } );
