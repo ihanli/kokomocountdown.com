@@ -11,7 +11,7 @@ _gaq.push(['_trackPageview']);
 $( document ).ready( function() {
   $( '#timer' ).spriteTimer( {
     'isCountDown': true,
-    'seconds': ( ( new Date( 'June 04, 2013 22:00:00' ) ) - ( new Date() ) ) / 1000,
+    'seconds': ( ( new Date( 'June 09, 2013 22:00:00' ) ) - ( new Date() ) ) / 1000,
     'digitImagePath': 'img/spritesheet.png',
     'digitWidth': 65,
     'digitHeight': 80
