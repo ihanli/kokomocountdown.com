@@ -408,6 +408,7 @@
                 }
             },
             getNumberOfDigits: function(sec) {
+                return 7;
                 if (sec < 10) {
                     return 1;
                 } else if (sec > 86399) {
