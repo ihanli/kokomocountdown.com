@@ -122,6 +122,8 @@
                 return false;
             },
             updateTime: function(seconds) {
+                if( seconds < 0) { seconds = 0; }
+            
                 var n = timerElm.find(settings.digitElement).size();
                 var i = 0;
                 var myVal = 0;
